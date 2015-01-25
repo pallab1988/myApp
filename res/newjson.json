@@ -1,0 +1,112 @@
+{
+    "queues": [
+        {
+            "queues": "q1,q2,default,q10",
+            "qname": "root",
+            "pQueue": "",
+            "capacity": "",
+            "state": "",
+            "acl_submit_applications": "",
+            "parentStr": ""
+        },
+        {
+            "queues": "q3,q4,q5",
+            "capacity": "30",
+            "state": "RUNNING",
+            "acl_submit_applications": "asdf,dibya14,john",
+            "qname": "q1",
+            "pQueue": "root",
+            "parentStr": "root"
+        },
+        {
+            "queues": "q6,q7",
+            "capacity": "50",
+            "state": "RUNNING",
+            "acl_submit_applications": "dibya1234,ujjal_other,john",
+            "qname": "q2",
+            "pQueue": "root",
+            "parentStr": "root"
+        },
+        {
+            "capacity": "10",
+            "state": "RUNNING",
+            "acl_submit_applications": "pratiksha,idas,john",
+            "qname": "default",
+            "pQueue": "root",
+            "queues": "",
+            "parentStr": "root"
+        },
+        {
+            "capacity": "10",
+            "state": "RUNNING",
+            "acl_submit_applications": "ujjal_other,ppanda,kallal_admin,dibya,john",
+            "qname": "q10",
+            "pQueue": "root",
+            "queues": "",
+            "parentStr": "root"
+        },
+        {
+            "capacity": "40",
+            "state": "RUNNING",
+            "acl_submit_applications": "ppmtdev,asdf,john",
+            "qname": "q3",
+            "pQueue": "q1",
+            "queues": "",
+            "parentStr": "root.q1"
+        },
+        {
+            "capacity": "25",
+            "state": "RUNNING",
+            "acl_submit_applications": "ppldev,pankaj,john",
+            "qname": "q4",
+            "pQueue": "q1",
+            "queues": "",
+            "parentStr": "root.q1"
+        },
+        {
+            "queues": "q8,q9",
+            "capacity": "35",
+            "state": "RUNNING",
+            "acl_submit_applications": "rpamballa,ppsarmah,john",
+            "qname": "q5",
+            "pQueue": "q1",
+            "parentStr": "root.q1"
+        },
+        {
+            "capacity": "65",
+            "state": "RUNNING",
+            "acl_submit_applications": "pranab,ppsarmah,john",
+            "qname": "q6",
+            "pQueue": "q2",
+            "queues": "",
+            "parentStr": "root.q2"
+        },
+        {
+            "capacity": "35",
+            "state": "RUNNING",
+            "acl_submit_applications": "rnath,rngogoi,john",
+            "qname": "q7",
+            "pQueue": "q2",
+            "queues": "",
+            "parentStr": "root.q2"
+        },
+        {
+            "capacity": "25",
+            "state": "RUNNING",
+            "acl_submit_applications": "pintuk,ppanda,kallal_admin,john",
+            "qname": "q8",
+            "pQueue": "q5",
+            "queues": "",
+            "parentStr": "root.q1.q5"
+        },
+        {
+            "capacity": "75",
+            "state": "RUNNING",
+            "acl_submit_applications": "ujjal_other,ppanda,kallal_admin,john",
+            "qname": "q9",
+            "pQueue": "q5",
+            "queues": "",
+            "parentStr": "root.q1.q5"
+        }
+    ]
+}

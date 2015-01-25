@@ -1,0 +1,205 @@
+<configuration>
+	<!-- Initial Property Definition -->
+  <property>
+    <name>yarn.scheduler.capacity.maximum-applications</name>
+    <value>10000</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
+    <value>0.1</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.resource-calculator</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.resource.DefaultResourceCalculator</value>
+  </property>
+  <!-- Done Initial Property Definition -->
+  
+  <!-- Defining Queues -->
+  <property>
+    <name>yarn.scheduler.capacity.root.queues</name>
+    <value>q1,q2,default,q10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.queues</name>
+    <value>q3,q4,q5</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.queues</name>
+    <value>q6,q7</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.queues</name>
+    <value>q8,q9</value>
+  </property>
+  <!-- Done Defining Queues -->
+  
+  <!-- Describing default queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.default.capacity</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.default.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.default.acl_submit_applications</name>
+    <value>pratiksha,idas,john</value>
+  </property>
+  <!-- Done Describing default queue -->
+  
+  <!-- Describing q1 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.capacity</name>
+    <value>30</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.acl_submit_applications</name>
+    <value>asdf,dibya14,john</value>
+  </property>
+  <!-- Done Describing q1 queue -->
+  
+  <!-- Describing q2 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.capacity</name>
+    <value>50</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.acl_submit_applications</name>
+    <value>dibya1234,ujjal_other,john</value>
+  </property>
+  <!-- Done Describing q2 queue -->
+  
+  <!-- Describing q1.q3 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q3.capacity</name>
+    <value>40</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q3.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q3.acl_submit_applications</name>
+    <value>ppmtdev,asdf,john</value>
+  </property>
+  <!-- Done Describing q1.q3 queue -->
+  
+  <!-- Describing q1.q4 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q4.capacity</name>
+    <value>25</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q4.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q4.acl_submit_applications</name>
+    <value>ppldev,pankaj,john</value>
+  </property>
+  <!-- Done Describing q1.q4 queue -->
+  
+  <!-- Describing q1.q5 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.capacity</name>
+    <value>35</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.acl_submit_applications</name>
+    <value>rpamballa,ppsarmah,john</value>
+  </property>
+  <!-- Done Describing q1.q5 queue -->
+  
+    <!-- Describing q2.q6 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.q6.capacity</name>
+    <value>65</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.q6.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.q6.acl_submit_applications</name>
+    <value>pranab,ppsarmah,john</value>
+  </property>
+  <!-- Done Describing q2.q6 queue -->
+  
+    <!-- Describing q2.q7 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.q7.capacity</name>
+    <value>35</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.q7.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q2.q7.acl_submit_applications</name>
+    <value>rnath,rngogoi,john</value>
+  </property>
+  <!-- Done Describing q2.q7 queue -->
+  
+     <!-- Describing q1.q5.q8 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.q8.capacity</name>
+    <value>25</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.q8.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.q8.acl_submit_applications</name>
+    <value>pintuk,ppanda,kallal_admin,john</value>
+  </property>
+  <!-- Done Describing q1.q5.q8 queue -->
+  
+       <!-- Describing q1.q5.q9 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.q9.capacity</name>
+    <value>75</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.q9.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q1.q5.q9.acl_submit_applications</name>
+    <value>ujjal_other,ppanda,kallal_admin,john</value>
+  </property>
+  <!-- Done Describing q1.q5.q9 queue -->
+      <!-- Describing q1.q5.q9 queue -->
+  <property>
+    <name>yarn.scheduler.capacity.root.q10.capacity</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q10.state</name>
+    <value>RUNNING</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.q10.acl_submit_applications</name>
+    <value>ujjal_other,ppanda,kallal_admin,dibya,john</value>
+  </property>
+  <!-- Done Describing q1.q5.q9 queue -->
+  
+  <property>
+    <name>yarn.scheduler.capacity.node-locality-delay</name>
+    <value>-1</value>
+  </property>
+  
+  </configuration>
